@@ -1277,7 +1277,7 @@ function resize() {
 }
 
 /* ================= a session packed into a link: everything the chart needs, about a kilobyte, so a phone can redraw it with no server ================= */
-const SHARE_URL = "https://sammikwon.com/meditate/"; // optional: the public address of this page, e.g. "https://sammikwon.com/meditate/". Left empty, the page uses its own address when it is hosted.
+const SHARE_URL = ""; // optional: the public address of this page, e.g. "https://sammikwon.com/meditate/". Left empty, the page uses its own address when it is hosted.
 function shareBase() {
   if (SHARE_URL) return SHARE_URL.split("#")[0];
   if (/^https?:$/.test(location.protocol) && !/claude|anthropic/i.test(location.hostname)) return location.origin + location.pathname;
